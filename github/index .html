@@ -1,82 +1,164 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-<meta charset="UTF-8">
-<title>Clash Royale UI</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clash Royale — Fan Site</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<header class="header">
+    <header class="header">
+    <div class="logo">
+        <img src="" alt="Clash Royale Logo" class="logo-img">
+        <span>Clash Royale Fan Site</span>
+    </div>
+    
+    <nav class="nav">
+        <a href="#home">Головна</a>
+        <a href="#cards">Карти</a>
+        <a href="#arenas">Арени</a>
+        <a href="#shop">Магазин</a>
+        <a href="#clan">Клан</a>
+    </nav>
 
-<div class="app">
+    <div class="header-right">
+       
+        <form class="search-form" onsubmit="return false;">
+            <input type="text" placeholder="Пошук карти чи арени..." class="search-input">
+            <button class="search-btn">🔍</button>
+        </form>
+
+        
+        <div class="header-icons">
+          
+            
+            
+        </div>
+    </div>
+</header>
+
+</header>
 
 
-
-<div class="sidebar">
-<div class="logo">
-<img src="./cd79717316eb5403bf031a8bd0e09455 (1).png">
-<b>Clash Royale</b>
+<div class="slider-controls">
+    <button id="prev">⟵</button>
+    <button id="next">⟶</button>
 </div>
 
+<main class="slider">
 
-<div class="menu">
-<div>Арена</div>
-<div>Карти</div>
-<div>Клан</div>
-<div>Магазин</div>
-</div>
-</div>
+    
+    <section id="home" class="slide">
+        <h1>Грай. Збирай. Перемагай.</h1>
+        <p>PvP-битви у реальному часі, покрокові бої та унікальні стратегії.</p>
 
+        <div class="hero-banner">
+            <img src="./2.jpg" alt="Головний герой">
+        </div>
 
+        <h2>Моя колода (8 карт)</h2>
+        <div class="deck">
+            <div class="card"><img src="./HogRiderCard.webp" alt="Hog Rider"><p>Hog Rider</p></div>
+            <div class="card"><img src="./MegaKnightCard.webp" alt="Mega Knight"><p>Mega Knight</p></div>
+            <div class="card"><img src="./FireballCard.webp" alt="Fireball"><p>Fireball</p></div>
+            <div class="card"><img src="./ElectroWizardCard.webp" alt="Electro Wizard"><p>Electro Wizard</p></div>
+            <div class="card"><img src="./ArchersCard.webp" alt="Archers"><p>Archers</p></div>
+            <div class="card"><img src="./MinionsCard.webp" alt="Minions"><p>Minions</p></div>
+            <div class="card"><img src="./GoblinBarrelCard.webp" alt="Goblin Barrel"><p>Goblin Barrel</p></div>
+            <div class="card"><img src="./PrinceCard.webp" alt="Prince"><p>Prince</p></div>
+        </div>
+    </section>
 
-<div class="main">
-<div class="top">
-<div class="stat">Трофеї: 6580</div>
-<div class="stat">Золото: 124 000</div>
-</div>
+    
+    <section id="cards" class="slide">
+        <h1>Карти</h1>
+        <div class="cards">
+            <div class="card"><img src="./HogRiderCard.webp" alt="Hog Rider"><p>Hog Rider</p><span class="info">Еліксир: 4 | Тип: Бойова | Рідкість: Рідкісна</span></div>
+            <div class="card"><img src="./MegaKnightCard.webp" alt="Mega Knight"><p>Mega Knight</p><span class="info">Еліксир: 7 | Тип: Бойова | Рідкість: Легендарна</span></div>
+            <div class="card"><img src="./FireballCard.webp" alt="Fireball"><p>Fireball</p><span class="info">Еліксир: 4 | Тип: Заклинання | Рідкість: Рідкісна</span></div>
+            <div class="card"><img src="./ElectroWizardCard.webp" alt="Electro Wizard"><p>Electro Wizard</p><span class="info">Еліксир: 4 | Тип: Бойова | Рідкість: Легендарна</span></div>
+            <div class="card"><img src="./ArchersCard.webp" alt="Archers"><p>Archers</p><span class="info">Еліксир: 3 | Тип: Бойова | Рідкість: Звичайна</span></div>
+            <div class="card"><img src="./MinionsCard.webp" alt="Minions"><p>Minions</p><span class="info">Еліксир: 3 | Тип: Бойова | Рідкість: Звичайна</span></div>
+            <div class="card"><img src="./GoblinBarrelCard.webp" alt="Goblin Barrel"><p>Goblin Barrel</p><span class="info">Еліксир: 3 | Тип: Заклинання | Рідкість: Епічна</span></div>
+            <div class="card"><img src="./PrinceCard.webp" alt="Prince"><p>Prince</p><span class="info">Еліксир: 5 | Тип: Бойова | Рідкість: Eпічна</span></div>
+        </div>
+    </section>
 
+    
+    <section id="arenas" class="slide">
+        <h1>Арени</h1>
+        <div class="arenas">
+            <div class="arena"><img src="./Arena1Pic01.webp" alt="Goblin Stadium"><h3>Goblin Stadium</h3><p>Трофеї: 0 – 300</p><span class="arena-info">Початкова арена, легкі суперники</span></div>
+            <div class="arena"><img src="./Arena2Pic01.webp" alt="Bone Pit"><h3>Bone Pit</h3><p>Трофеї: 300 – 600</p><span class="arena-info">Легка арена для новачків</span></div>
+            <div class="arena"><img src="./Arena3Pic01.webp" alt="Barbarian Bowl"><h3>Barbarian Bowl</h3><p>Трофеї: 600 – 1000</p><span class="arena-info">Середній рівень</span></div>
+            <div class="arena"><img src="./Arena4Pic01.webp" alt="P.E.K.K.A’s Playhouse"><h3>P.E.K.K.A’s Playhouse</h3><p>Трофеї: 1000 – 1300</p><span class="arena-info">Введення сильніших карт</span></div>
+        </div>
+    </section>
 
-<div class="arena">
-<h2>Колода</h2>
-<div class="cards">
+</main>
 
+<footer class="footer">
+    <p>Clash Royale Fan Site &copy; 2026. Всі права належать власникам контенту.</p>
+</footer>
 
-<div class="card">
-<div class="elixir">3</div>
-<img src="./KnightCard.webp">
-<div>Лицар</div>
-</div>
-
-
-<div class="card">
-<div class="elixir">5</div>
-<img src="./3F3F34.webp">
-<div>Чаклун</div>
-</div>
-
-
-<div class="card">
-<div class="elixir">5</div>
-<img src="./3F3F3F.webp">
-<div>Гігант</div>
-</div>
-
-
-<div class="card">
-<div class="elixir">3</div>
-<img src="./3F3F32.webp">
-<div>Стріли</div>
-</div>
-
-
-</div>
-</div>
-</div>
-
-
-</div>
-
-
+<script src="script.js"></script>
 </body>
+
+<section id="shop" class="slide">
+    <h1>Магазин</h1>
+    <p>Придбай карти, золото та скрині</p>
+
+    <div class="shop">
+        <div class="shop-item">
+            <img src="./Pouch_Of_Coins.webp" alt="Gold">
+            <h3>1000 золота</h3>
+            <p>Ціна: 50 💎</p>
+            <button>Купити</button>
+        </div>
+
+        <div class="shop-item">
+            <img src="./Golden_Chest.webp" alt="Chest">
+            <h3>Золота скриня</h3>
+            <p>Ціна: 80 💎</p>
+            <button>Купити</button>
+        </div>
+
+        <div class="shop-item">
+            <img src="./wild-card-stack.webp" alt="Cards">
+            <h3>Набір карт</h3>
+            <p>Ціна: 120 💎</p>
+            <button>Купити</button>
+        </div>
+    </div>
+</section>
+
+<section id="clan" class="slide">
+    <h1>Клан</h1>
+    <p>Приєднуйся до клану, спілкуйся та воюй разом</p>
+
+    <div class="clan-container">
+
+        <div class="clan-card">
+            <img src="./War_Shield.webp" alt="Clan Badge">
+            <h3>Royal Warriors</h3>
+            <p>Учасники: 45 / 50</p>
+            <p>Трофеї клану: 32 500</p>
+            <button>Приєднатися</button>
+        </div>
+
+        <div class="clan-info">
+            <h2>Інформація</h2>
+            <ul>
+                <li>Мін. трофеї: 3000</li>
+                <li>Мова: Українська</li>
+                <li>Війни кланів: Активні</li>
+                <li>Донати карт: Щодня</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
 
 </html>
